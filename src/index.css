@@ -13,12 +13,20 @@
   }
 
   html {
-    font-family: var(--font-sans);
+    /* Use a single premium font (no Inter/system UI by default) */
+    font-family: var(--font-mona);
     font-feature-settings: "rlig" 1, "calt" 1;
+    color-scheme: dark;
+    background-color: #0B0F14;
   }
 
   body {
     @apply antialiased;
+  }
+
+  ::selection {
+    background: #173653;
+    color: #ffffff;
   }
 }
 
